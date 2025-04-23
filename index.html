@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Causeway Cafe & Bar at Herefordshire Golf Club. Experience exceptional dining and stunning views in a historic setting.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="components/include.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" as="style">
+    <link rel="preload" href="images/causeway-estate-home-banner.png" as="image" fetchpriority="high">
+    
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <title>The Hereford Estate Catering  - Herefordshire Golf Club</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+</head>
+<body>
+    <!-- Include header component -->
+    <div include-html="components/header.html"></div>
+
+    <!-- Hero section -->
+    <section class="hero-image">
+        <div class="hero-content">
+            <h1>THE CAUSEWAY ESTATE CATERING</h1>
+            <p class="established">EST. 1932</p>
+        </div>
+    </section>
+
+    <!-- Introduction section -->
+    <section class="intro">
+        <div class="logo-feature">
+            <img src="images/the-causeway-estate-logo.png" alt="The Causeway Estate Logo" class="intro-logo" width="200" height="auto">
+        </div>
+        <h2>Welcome to The Causeway Estate Catering</h2>
+        <p>Nestled within the prestigious Herefordshire Golf Club, The Causeway Estate's Catering services offer an exceptional dining experience in a setting steeped in history and tradition.</p>
+        <p>Our menu celebrates locally-sourced ingredients, featuring everything from hearty breakfast classics to elegant afternoon teas, complemented by our carefully curated selection of wines and beverages.</p>
+        <p>Whether you're a golfer looking for post-round refreshments or a visitor seeking a memorable dining experience, our warm hospitality and stunning views create the perfect atmosphere for any occasion.</p>
+    </section>
+
+    <!-- Food Gallery Section -->
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/causeway-estate-home-platters.jpg" alt="Our sharing platters" loading="lazy" width="400" height="300">
+        </div>
+        <div class="gallery-item">
+            <img src="images/causeway-estate-home-burgers.jpg" alt="Our delicious burgers" loading="lazy" width="400" height="300">
+        </div>
+        <div class="gallery-item">
+            <img src="images/causeway-estate-home-dessert.jpg" alt="Our desserts" loading="lazy" width="400" height="300">
+        </div>
+    </div>
+
+    <!-- Include footer component -->
+    <div include-html="components/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="components/include.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html> 
